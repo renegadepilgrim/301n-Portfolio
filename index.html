@@ -1,12 +1,25 @@
+<!-- As a developer, I want my site to use valid and semantic markup so that employers will love me.
+As the creator, I want the page to link to my social and GitHub pages, so that visitors can follow me and I can build my audience.
+As a developer, I want portfolio items displayed with a repeatable template, so that I can reuse it and abstract out the details for individual projects.
+As a developer, I want my CSS organized (think SMACSS) so that I can find my stylings easily.
+
+Think of some ideas for your source data, and code it up in its own file! Build out an array of three objects to start with, all having similar properties.
+Create JavaScript methods that work with the constructor function you wrote yesterday to modify your source data and render it to the DOM.
+Use good Object Oriented code: attach the constructor function and its associated methods to an object.
+Leave as little in the window (global) namespace as possible: attach functions to objects, etc.
+Use jQuery to clone the example markup for each project, as you add additional content.
+Your "Project" prototype should have a .toHtml() function that adds new data to the DOM.
+Refactor your CSS into a base, layout, and module structure where applicable. -->
+
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Heather's Portfolio</title>
-    <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="CSS/style.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -27,11 +40,11 @@
           Links
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="https://github.com/renegadepilgrim">GitHub</a>
-          <a class="dropdown-item" href="blog.html">Blog</a>
-          <a class="dropdown-item" href="https://www.renegadepilgrim.com">Personal Website</a>
+          <a class="dropdown-item" href="#">GitHub</a>
+          <a class="dropdown-item" href="#">Blog</a>
+          <a class="dropdown-item" href="#">Personal Website</a>
+          <a class="dropdown-item" href="#">Passion Project</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="https://www.datealesbianadventurer.com">Passion Project</a>
         </div>
       </li>
       <li class="nav-item">
@@ -39,12 +52,13 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <input class="form-control mr-sm-2" type="search" placeholder="I'm Looking For..." aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
 </nav>
-
+    <h1>Welcome!</h1>
+    <p>Please take a look around and learn more about me, the things I like, and the work I have done.</p>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
