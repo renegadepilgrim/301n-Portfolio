@@ -1,17 +1,3 @@
-<!-- As a developer, I want my site to use valid and semantic markup so that employers will love me.
-As the creator, I want the page to link to my social and GitHub pages, so that visitors can follow me and I can build my audience.
-As a developer, I want portfolio items displayed with a repeatable template, so that I can reuse it and abstract out the details for individual projects.
-As a developer, I want my CSS organized (think SMACSS) so that I can find my stylings easily.
-
-Think of some ideas for your source data, and code it up in its own file! Build out an array of three objects to start with, all having similar properties.
-Create JavaScript methods that work with the constructor function you wrote yesterday to modify your source data and render it to the DOM.
-Use good Object Oriented code: attach the constructor function and its associated methods to an object.
-Leave as little in the window (global) namespace as possible: attach functions to objects, etc.
-Use jQuery to clone the example markup for each project, as you add additional content.
-Your "Project" prototype should have a .toHtml() function that adds new data to the DOM.
-Refactor your CSS into a base, layout, and module structure where applicable. -->
-
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -22,43 +8,20 @@ Refactor your CSS into a base, layout, and module structure where applicable. --
     <link rel="stylesheet" href="CSS/style.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Heather Knight Portfolio</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="about.html">About Me</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Links
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">GitHub</a>
-          <a class="dropdown-item" href="#">Blog</a>
-          <a class="dropdown-item" href="#">Personal Website</a>
-          <a class="dropdown-item" href="#">Passion Project</a>
-          <div class="dropdown-divider"></div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="I'm Looking For..." aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-    <h1>Welcome!</h1>
-    <p>Please take a look around and learn more about me, the things I like, and the work I have done.</p>
+    <div class="jumbotron">
+      <h1 class="display-3">Heather Knight Portfolio</h1>
+      <p class="lead">This is my portfolio for Alchemy Code Labs program.  Please feel free to look around and see if anything is of interest to you.</p>
+      <hr class="my-4">
+      <p class="lead">
+        <a class="btn btn-outline-dark btn-lg" href="index.html" role="button">Home</a>
+        <a class="btn btn-outline-dark btn-lg" href="about.html" role="button">About Me</a>
+        <a class="btn btn-outline-dark btn-lg" href="https://www.github.com/renegadepilgrim" target="_blank" role="button">GitHub</a>
+        <a class="btn btn-outline-dark btn-lg" href="blog.html" role="button">Blog</a>
+        <a class="btn btn-outline-dark btn-lg" href="photography.html" role="button">Photography</a>
+        <a class="btn btn-outline-dark btn-lg" href="https://www.renegadepilgrim.com" target="_blank" role="button">Personal Website</a>
+        <a class="btn btn-outline-dark btn-lg" href="https://www.datealesbianadventurer.com" target="_blank" role="button">Passion Project</a>
+      </p>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
